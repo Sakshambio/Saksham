@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OMNI BIOMED SOLUTIONS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <img src="logo.png" alt="Company Logo" class="logo">
+    <div class="company-title">
+      <h1>OMNI BIOMED SOLUTIONS</h1>
+      <p>Your Partner In Medical Excellence</p>
+    </div>
+    <nav class="main-nav">
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="networks.html">Networks</a>
+      <a href="register.html">Register</a>
+      <a href="careers.html">Careers</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <div class="slides fade">
+      <img src="01.png" alt="Image 1">
+    </div>
+    <div class="slides fade">
+      <img src="02.png" alt="Image 2">
+    </div>
+    <div class="slides fade">
+      <img src="03.png" alt="Image 3">
+    </div>
+    <div class="slides fade">
+      <img src="04.png" alt="Image 4">
+    </div>
+  </section>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementsByClassName("slides");
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      index++;
+      if (index > slides.length) { index = 1; }
+      slides[index - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 sec
+    }
+    showSlides();
+  </script>
+
+</body>
+</html>
 
