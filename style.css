@@ -1,1 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f8f8f8;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.company-title {
+  text-align: center;
+}
+
+.company-title h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.company-title p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.main-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.main-nav a:hover {
+  color: #004999;
+}
+
+/* Slider */
+.slider {
+  max-width: 100%;
+  height: 250px;
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: fade 1s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
 
