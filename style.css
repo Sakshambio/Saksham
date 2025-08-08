@@ -3,7 +3,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.main-header {
+.main-header
+{
+  background-image: url("01.png");
+  background-size: cover;
+  background-position: center;
+}
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
