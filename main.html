@@ -3,15 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OMNI BIOMED SOLUTIONS</title>
+  <title>SAKSHAM BIOSURGICAL SERVICES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #f2f6fa; color: #333; }
+
+    header {
+      color: white; text-align: center; padding: 3rem 1rem;
+    }
+
+    nav {
+      background: #003d99; text-align: center; padding: 1rem;
+    }
+
+    nav a {
+      color: white; text-decoration: none; margin: 0 15px; font-weight: 600;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #e9f0ff;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #222; color: white; text-align: center; padding: 1.5rem;
+    }
+
+    .whatsapp-button {
+      position: fixed; bottom: 80px; right: 20px; z-index: 1000;
+    }
+
+    .whatsapp-button img {
+      width: 50px; height: 50px; transition: transform 0.3s;
+    }
+
+    .whatsapp-button img:hover {
+      transform: scale(1.1);
+    }
+
+    #backToTop {
+      position: fixed; bottom: 20px; right: 20px; background: #007bff; color: white;
+      border: none; padding: 10px 15px; border-radius: 50%;
+      font-size: 20px; cursor: pointer; display: none;
+    }
+
+    #backToTop:hover { background: #0056b3; }
+
+    @media (max-width: 600px) {
+      .services { flex-direction: column; align-items: center; }
+    }
+  </style>
 </head>
 <body>
 
   <header class="main-header">
     <img src="logo1.png" alt="Company Logo" class="logo">
     <div class="company-title">
-      <h1>OMNI BIOMED SOLUTIONS</h1>
+      <h1>SAKSHAM BIOSURGICAL SERVICES</h1>
       <p>Your Partner In Medical Excellence</p>
     </div>
     <nav class="main-nav">
